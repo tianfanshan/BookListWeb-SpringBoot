@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>书单详情</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="class-declaration-page">详情</h2>
+    <div class="card card-body bg-light">
+        <p>
+            <strong>书名：</strong><span th:text="${book.get().getName()}">我们仨</span>
+        </p>
+        <p>
+            <strong>作者：</strong><span th:text="${book.get().getAuthor()}">杨绛</span>
+        </p>
+        <p>
+            <strong>说明：</strong><span th:text="${book.get().getDescription()}">这是一本小说，不错</span>
+        </p>
+        <p th:switch="${book.get().getStatus()}">
+            <strong>状态：</strong>
+            <span th:case="0">想读</span>
+            <span th:case="1">在读</span>
+            <span th:case="2">已读</span>
+        </p>
+    </div>
+    <div class="alert alert-success" th:unless="${book.get().getStatus() == 0}"><strong>不错</strong>，你已经开始行动</div>
+    <div class="alert alert-warning" th:if="${book.get().getStatus() == 0}"><strong>注意</strong>，你还没开始行动</div>
+    <a href="javascript:history.go(-1)" class="btn btn-primary">返回</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+2023-01-02T15:12:51.299+01:00  INFO 9228 --- [main] com.stf.DemoApplication                  : Starting DemoApplication using Java 17.0.4.1 with PID 9228 (C:\Users\tf\udemy\spring_boot_chinese\demo\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\demo)
+2023-01-02T15:12:51.302+01:00 DEBUG 9228 --- [main] com.stf.DemoApplication                  : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-02T15:12:51.303+01:00  INFO 9228 --- [main] com.stf.DemoApplication                  : No active profile set, falling back to 1 default profile: "default"
+2023-01-02T15:12:52.280+01:00  INFO 9228 --- [main] com.stf.DemoApplication                  : Started DemoApplication in 1.316 seconds (process running for 1.764)
+2023-01-02T15:18:01.035+01:00  INFO 10692 --- [main] com.stf.DemoApplication                  : Starting DemoApplication using Java 17.0.4.1 with PID 10692 (C:\Users\tf\udemy\spring_boot_chinese\demo\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\demo)
+2023-01-02T15:18:01.037+01:00 DEBUG 10692 --- [main] com.stf.DemoApplication                  : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-02T15:18:01.037+01:00  INFO 10692 --- [main] com.stf.DemoApplication                  : No active profile set, falling back to 1 default profile: "default"
+2023-01-02T15:18:02.023+01:00  INFO 10692 --- [main] com.stf.DemoApplication                  : Started DemoApplication in 1.409 seconds (process running for 1.848)

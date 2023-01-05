@@ -1,0 +1,9 @@
+server:
+  port: 8081
+logging:
+  level:
+    root: warn
+    com.stf: info
+  file:
+    path: logs/my.log
+
