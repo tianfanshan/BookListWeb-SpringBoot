@@ -1,10 +1,9 @@
 package com.stf.web;
 
 import com.stf.domain.Book;
-import com.stf.service.BookService;
+import com.stf.service.BookServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -18,7 +17,7 @@ import java.util.Optional;
 public class BookApp {
 
     @Autowired
-    private BookService bookService;
+    private BookServiceImp bookService;
 
 //    /**
 //     * 获取读书清单列表
